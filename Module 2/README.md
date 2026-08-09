@@ -4,6 +4,8 @@
 > Document pédagogique basé sur le PDF **« CEHv13 - Module 02 - Footprinting and Reconnaissance »** d'EC-Council (certification **CEH**, examen **312-50**).
 > Ce document reprend et **explique** tout le contenu du module, objectif par objectif.
 
+> 📌 **Fichier de révision :** [REVISION-Footprinting-Scanning-Enumeration.md](./REVISION-Footprinting-Scanning-Enumeration.md) — les 103 questions du dump avec réponses justifiées, cartographie des outils et aide-mémoire (footprinting + scanning + énumération).
+
 ---
 
 # Table des matières
