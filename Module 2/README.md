@@ -5,6 +5,7 @@
 > Ce document reprend et **explique** tout le contenu du module, objectif par objectif.
 
 > 📌 **Fichier de révision :** [REVISION-Footprinting-Scanning-Enumeration.md](./REVISION-Footprinting-Scanning-Enumeration.md) — les 103 questions du dump avec réponses justifiées, cartographie des outils et aide-mémoire (footprinting + scanning + énumération).
+> 📝 **QCM d'entraînement (EN) :** [QCM-Footprinting-Scanning-Enumeration_EN.md](./QCM-Footprinting-Scanning-Enumeration_EN.md) — les 103 questions au format QCM réel en anglais (comme l'original), avec réponses et justifications en bas du fichier.
 
 ---
 
