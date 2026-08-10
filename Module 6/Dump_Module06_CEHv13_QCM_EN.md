@@ -1,7 +1,7 @@
 # CEH v13 Dump — Module 06 : System Hacking
 ## Exam-Style Practice Questions (312-50) — With Answer Key
 
-> 60 multiple-choice questions based on Module 06 content. Answer key at the end.
+> 72 multiple-choice questions based on Module 06 content. Answer key at the end.
 
 ---
 
@@ -379,6 +379,80 @@
 - C) `cat /dev/null > ~/.bash_history`
 - D) `export HISTSIZE=100`
 
+### Part G — Privilege Escalation & Anti-Forensics Extras (Q61–Q72)
+
+**Q61.** Which Metasploit exploit **bypasses UAC by hijacking a special key** from the HKCU registry hive attached to `fodhelper.exe`?
+- A) `bypassuac`
+- B) `bypassuac_fodhelper`
+- C) `bypassuac_injection`
+- D) `exploit/windows/local/ms16_075`
+
+**Q62.** The **NFS** protocol provides communication between client and server through RPC on which port?
+- A) 445
+- B) 2049
+- C) 3389
+- D) 5985
+
+**Q63.** Which file stores the configuration of **unattended installs** and may contain decoded passwords and local account details?
+- A) `sysmain.sdb`
+- B) `Unattend.xml`
+- C) `Hiberfil.sys`
+- D) `pagefile.sys`
+
+**Q64.** Replacing **sethc.exe** with `cmd.exe` to obtain a backdoor at the login screen is an example of:
+- A) Abusing accessibility features
+- B) DLL search order hijacking
+- C) Named pipe impersonation
+- D) Application shimming
+
+**Q65.** A **shim** named **RedirectEXE** in the Windows Application Compatibility Framework can be abused to:
+- A) Capture memory addresses
+- B) Bypass UAC
+- C) Inject DLLs only
+- D) Clear event logs
+
+**Q66.** The **AdminSDHolder** object is periodically re-applied to privileged accounts by which process?
+- A) DCSync
+- B) SDProp (Security Descriptor Propagator)
+- C) Skeleton Key
+- D) WfpAleProcessTokenReference
+
+**Q67.** In a **stego-only attack** (steganalysis), the analyst:
+- A) Knows both the original and stego object
+- B) Has access only to the stego-object and must try every possible algorithm
+- C) Knows the message but not the cover
+- D) Uses a chi-square test only
+
+**Q68.** The **zsteg** tool is used to detect stegano-hidden data in which file types?
+- A) PNG and BMP images
+- B) MP3 audio
+- C) Text files
+- D) Executables
+
+**Q69.** After exploiting the **Sticky Keys** feature with Metasploit's `sticky_keys` module, pressing **Shift five times** at the login screen:
+- A) Opens a Command Prompt with system-level access
+- B) Reboots the system
+- C) Clears the Bash history
+- D) Disables the firewall
+
+**Q70.** **Trail obfuscation** (modifying timestamps, log tampering) can be performed using which tools?
+- A) Timestomp and Transmogrify
+- B) zsteg and Snow
+- C) pwdump7 and fgdump
+- D) GMER and Stream Detector
+
+**Q71.** Windows **WMI** remote access can be performed via DCOM and WinRM, which use respectively the ports:
+- A) 135 and 5985/5986
+- B) 88 and 389
+- C) 445 and 3389
+- D) 137 and 5355
+
+**Q72.** **Certipy** is a tool used to:
+- A) Crack Kerberos tickets
+- B) Identify and abuse misconfigured ADCS (Active Directory Certificate Services) templates
+- C) Poison LLMNR/NBT-NS
+- D) Wipe disk drives
+
 ---
 
 ## Answer Key
@@ -467,13 +541,29 @@
 | 59 | **B** | `HISTSIZE=0` disables Bash history saving |
 | 60 | **A** | `shred ~/.bash_history` makes the history file unreadable |
 
+### Part G
+| Q | Answer | Explanation |
+|---|---|---|
+| 61 | **B** | `bypassuac_fodhelper` hijacks a HKCU registry key attached to `fodhelper.exe` |
+| 62 | **B** | NFS uses port 2049 via RPC |
+| 63 | **B** | `Unattend.xml` stores unattended install config (usernames, possibly decoded passwords) |
+| 64 | **A** | Replacing accessibility features (sethc.exe, osk.exe) = abusing accessibility features |
+| 65 | **B** | The RedirectEXE shim can be used to bypass UAC |
+| 66 | **B** | SDProp re-applies AdminSDHolder ACLs to privileged accounts |
+| 67 | **B** | In a stego-only attack, only the stego-object is available |
+| 68 | **A** | zsteg detects hidden data in PNG and BMP images |
+| 69 | **A** | 5× Shift opens a system-level Command Prompt |
+| 70 | **A** | Timestomp and Transmogrify modify date/time metadata |
+| 71 | **A** | WMI uses DCOM (135) and WinRM (5985/5986) |
+| 72 | **B** | Certipy identifies/abuses misconfigured ADCS templates (e.g. ESC1) |
+
 ---
 
 ## Indicative scoring
-- **50–60 correct**: excellent — ready for the exam
-- **40–49**: good — review the missed sections
-- **30–39**: average — restudy the course, then retry
-- **< 30**: re-read the complete Module 06 course document
+- **60–72 correct**: excellent — ready for the exam
+- **48–59**: good — review the missed sections
+- **36–47**: average — restudy the course, then retry
+- **< 36**: re-read the complete Module 06 course document
 
 ---
 
