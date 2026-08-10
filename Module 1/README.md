@@ -814,7 +814,7 @@ Cadre de la protection des données au Royaume-Uni. **Remplace le DPA 1998**, en
 - Copyright Law (Section 107 — « fair use ») ; Online Copyright Infringement Liability Limitation Act ;
 - Lanham (Trademark) Act (15 USC §§ 1051-1127) ;
 - Electronic Communications Privacy Act ; Foreign Intelligence Surveillance Act ; Protect America Act 2007 ;
-- Privacy Act 1974 ; Computer Security Act 1987 ; Freedom of Information Act (FOIA) ;
+- Privacy Act 1974 ; Computer Security Act 1987 ; **National Information Infrastructure Protection Act of 1996** ; Freedom of Information Act (FOIA) ;
 - **Computer Fraud and Abuse Act (CFAA)** ; Identity Theft and Assumption Deterrence Act ;
 - **CCPA** (California Consumer Privacy Act) ; **CPRA** (California Privacy Rights Act 2020).
 
